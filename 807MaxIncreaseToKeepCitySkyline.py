@@ -4,8 +4,10 @@ class Solution:
         :type grid: List[List[int]]
         :rtype: int
         """
-        up_skyline = list(map(max, grid))
-        left_skyline = list(map(max, *grid)) # Note: map(max, *grid)
+        left_skyline = list(map(max, grid))
+        up_skyline = list(map(max, *grid)) # Python Feature: map(max, *grid)
+                                           # equivilant to: up_skyline = [max(col) for col in zip(*grid)]
+                                           # can be used to transpose a matrix
         result = 0
         for i in range(len(grid)):
             for j in range(len(grid[0])):

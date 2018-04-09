@@ -8,6 +8,7 @@ class Solution:
         for i in range(len(row)):
             pos[row[i]] = i
         swap_count = 0
+        # Algorighm: greedy
         for i in range(0, len(row), 2):
             if row[i + 1] == (row[i] - 1 if row[i] % 2 else row[i] + 1):
                 continue
@@ -17,3 +18,4 @@ class Solution:
             row[i + 1], row[pos[q]] = q, p
             pos[p], pos[q] = pos[q], pos[p]
         return swap_count
+        

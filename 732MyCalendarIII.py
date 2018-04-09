@@ -11,11 +11,12 @@ class MyCalendarThree:
         :type end: int
         :rtype: int
         """
-        self.counter[start] += 1
+        self.counter[start] += 1 # Python Feature: use of Counter
         self.counter[end] -= 1
         active, ans = 0, 0
+        # Algorithm: counting overlapping segments
         for i in sorted(self.counter):
-            active += self.counter[i]
+            active += self.counter[i] 
             ans = max(ans, active)
         return ans
 
