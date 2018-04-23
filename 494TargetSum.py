@@ -51,6 +51,3 @@ class SolutionB:
                     queue.append((n + nums[k], k + 1))
                     queue.append((n - nums[k], k + 1))
         return res
-
-if __name__ == '__main__':
-    print(Solution().findTargetSumWays([35,25,24,23,2,47,39,22,3,7,11,26,6,30,5,34,10,43,41,28], 49))
