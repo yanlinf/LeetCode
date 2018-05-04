@@ -13,7 +13,7 @@ class MinStack:
         :rtype: void
         """
         self.array.append(x)
-        if not mins or x <= mins[-1]:
+        if not self.mins or x <= self.mins[-1]:
             self.mins.append(x)
 
     def pop(self):
@@ -28,11 +28,13 @@ class MinStack:
         """
         :rtype: int
         """
+        return self.array[-1]
 
     def getMin(self):
         """
         :rtype: int
         """
+        return self.mins[-1]
 
 
 # Your MinStack object will be instantiated and called as such:

@@ -15,7 +15,7 @@ class Solution:
             else:
                 left = mid + 1
         start = left if nums[left] == target else -1
-        left, right = 0, len(nums)
+        left, right = start, len(nums)
         while left + 1 < right:
             mid = (left + right) // 2
             if nums[mid] > target:
