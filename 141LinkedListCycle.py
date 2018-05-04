@@ -5,7 +5,7 @@
 #         self.next = None
 
 
-class Solution(object):
+class Solution:
     def hasCycle(self, head):  # Algorithm: two pointers
         """
         :type head: ListNode

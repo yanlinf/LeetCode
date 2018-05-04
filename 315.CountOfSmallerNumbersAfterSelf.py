@@ -29,7 +29,7 @@ class BinaryIndexedTree:
         return res
 
 
-class Solution(object):
+class Solution:
     def countSmaller(self, nums):  # Algorithm(data structure): Binary Indexed Tree
         """
         :type nums: List[int]
