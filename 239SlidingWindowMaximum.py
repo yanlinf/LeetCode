@@ -5,7 +5,7 @@ class Solution:
         :type k: int
         :rtype: List[int]
         """
-        if not nums:  # Algorithm: maintaining a deque
+        if not nums:  # Algorithm: maintaining a ordered deque
             return []
         window, res = [], []
         for i in range(len(nums)):
