@@ -4,7 +4,7 @@ class Solution:
         :type heights: List[int]
         :rtype: int
         """
-        stack, res = [(0, -1, 0)], 0  # Algorithm: Ordered Stack
+        stack, res = [(0, -1, 0)], 0  # Algorithm: Ordered Stack(Deque)
         heights.append(0)
         for i in range(len(heights)):
             while stack and stack[-1][0] > heights[i]:
