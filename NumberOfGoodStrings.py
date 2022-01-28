@@ -1,3 +1,11 @@
+# The problem is: A string s is good if it is possible to
+# rearrange the characters of s such that the new string
+# formed contains "prep" as **substring**. So the string
+# "proper" is good but "poor" is not. Given an integer n,
+# find the number of only lowercase English characters. As
+# this number might be too large, return it modulo (10^9 +7)
+
+
 def func(n: int):
     # N = TOTAL_NUM = 26 ** n
     # n1 = NUM[0A]
